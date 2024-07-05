@@ -1,9 +1,12 @@
+import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
+
 export default function Navbar( ) {
     return (
         <nav className="w-full relative flex items-center justify-between max-w-2xl mx-auto px-4 py-5">
             
-            <div>1</div>
-            <div>2</div>
+            <Link href='/' className="font-bold text-3xl">Oylum<span className="text-primary">Blog</span></Link>
+            <ModeToggle></ModeToggle>
         </nav>
     )
 }
